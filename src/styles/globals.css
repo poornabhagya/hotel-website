@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-earth-green: 34 60 45;
+    --color-earth-brown: 101 67 33;
+    --color-beige: 245 238 227;
+    --color-ivory: 255 250 240;
+    --color-golden: 184 134 11;
+    --color-deep-forest: 21 40 28;
+    --color-sage: 138 154 91;
+    --color-terracotta: 181 101 29;
+    
+    --background: var(--color-ivory);
+    --foreground: var(--color-deep-forest);
+    --card: var(--color-beige);
+    --card-foreground: var(--color-deep-forest);
+    --popover: var(--color-ivory);
+    --popover-foreground: var(--color-deep-forest);
+    --primary: var(--color-earth-green);
+    --primary-foreground: var(--color-ivory);
+    --secondary: var(--color-golden);
+    --secondary-foreground: var(--color-deep-forest);
+    --muted: var(--color-beige);
+    --muted-foreground: 101 67 33;
+    --accent: var(--color-sage);
+    --accent-foreground: var(--color-deep-forest);
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 138 154 91;
+    --input: 138 154 91;
+    --ring: var(--color-golden);
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  h6 {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.75;
+    font-weight: 400;
+  }
+}
